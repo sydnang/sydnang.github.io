@@ -46,7 +46,7 @@ html, body {
 
 }
 .sidebar {
-	background-color: #FFF4F4;
+	background-color: #FFD07F;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -100,14 +100,16 @@ ul {
 .best-of-container {
 	width: 66vw;
 	background-color: #FFF4F4;
-	padding-top: 5;
+	padding-top: 10px;
+	padding-bottom: 10px;
 
 }
 
 
 .thoughts-container {
 	width: 66vw;
-	padding-top: 5;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 
 }
@@ -119,15 +121,20 @@ ul {
 .photos-container {
 	width: 66vw;
 	background-color: #FFF4F4;
-	padding-left: 10;
-	padding-top: 5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
 
 .item {
 	position: relative;
 	display: inline-block;
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	margin-right: 10px;
 	margin-left: 10px;
 	padding-left: 10px;
@@ -138,7 +145,7 @@ ul {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	left: 50%;
+	left: 20%;
 }
 .row {
 	margin-top: 10px;
