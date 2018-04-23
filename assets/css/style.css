@@ -1,0 +1,145 @@
+html, body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	position: relative;
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+#navbar{
+	float: left;
+	z-index: 2;
+	position: fixed;
+	left: 34vw;
+	top: 0px;
+	color: #333;
+	background-color: white;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.12), 1px 1px 3px rgba(0,0,0,0.24);
+	width: 66%;
+}
+
+.nav-element {
+	float: right;
+	margin-left: 24px;
+	padding-top: 6px;
+	padding-right: 20px;
+	-webkit-transition: font-size .2s;
+	transition: font-size .2s;
+}
+
+.nav-element:hover {
+	font-size: 105%;
+	text-decoration: underline;
+
+}
+
+.content {
+	width: 900px;
+	height: 2000px;
+	position: absolute;
+	left: 34vw;
+	letter-spacing: 3px;
+	line-height: 22px;
+
+}
+.sidebar {
+	background-color: #FFF4F4;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 34vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sidebar-item {
+	padding: 20px;
+	align-items: center;
+	font-family: 'Parisienne', cursive;
+	font-size: 40px;
+}
+
+#photo-me {
+	padding: 10px;
+	border-radius: 50%;
+	position: relative;
+	float: left;
+	z-index: 5;
+	border-radius: 5%;
+
+
+}
+
+/*.top-bar-container {
+	width: 66vw;
+	height: 33vh;
+	background-color: lightblue;
+}*/
+/*.top-img {
+	height: 33vh;
+}*/
+
+.about-container {
+	width: 66vw;
+	padding-top: 75px;
+
+
+}
+ul {
+	list-style: none;
+	padding-left: 10;
+	list-style-position: inside;
+}
+
+.best-of-container {
+	width: 66vw;
+	background-color: #FFF4F4;
+	padding-top: 5;
+
+}
+
+
+.thoughts-container {
+	width: 66vw;
+	padding-top: 5;
+	text-align: center;
+
+}
+
+#thoughts-heading {
+	text-align: left;
+}
+
+.photos-container {
+	width: 66vw;
+	background-color: #FFF4F4;
+	padding-left: 10;
+	padding-top: 5;
+}
+
+.item {
+	position: relative;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.item img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+}
+.row {
+	margin-top: 10px;
+}
