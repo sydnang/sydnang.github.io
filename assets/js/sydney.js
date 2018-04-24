@@ -15,8 +15,6 @@ $(document).ready(function() {
 	
 
 	//JQUERY FUNCTION NUMBER 3 Back to top button appears when you scroll
-	
-	
 
 	$("body").scroll(function() {
     	if ($(this).scrollTop() >= 50) {
@@ -35,34 +33,20 @@ $(document).ready(function() {
 	});
 
 
-	//JQUERY FUNCTION NUMBER 5 wiggle photo upon hovering
-	$('.nav-element').hover(function() {
-		console.log('you hovered!');
-		$(this).effect("shake", {times: 1}, 600);
 
-	})
-
-	//JQUERY FUNCTION NUMBER 6 fadeIn welcome message when the page first loads
+	//JQUERY FUNCTION NUMBER 5 fadeIn welcome message when the page first loads
 	var pageload = function() {
-		$('.sidebar-item').fadeIn(800);
+		$('#welcome-text').fadeIn(2800);
 		console.log('loaded');
 	}
 	pageload()
 
-	console.log($(this).scrollTop());
-	console.log(document.scrollingElement.scrollTop);
 
-    $(".content").on( 'scroll', function(){
-   		console.log('Event Fired');
-	});
-
-	$(".content").bind('scroll', function() {
-   console.log('Event worked');
-	}); 
-
-	var p = $('html,body');
-	$( ".info" ).text( "scrollTop:" + p.scrollTop() );
-
-
+	//JQUERY FUNCTION NUMBER 6 hover over social media icons
+	$('.fa').hover(function() {
+		$(this).css('color', 'white');
+	}, function() {
+		$(this).css('color', 'black');
+	})
 
 })
