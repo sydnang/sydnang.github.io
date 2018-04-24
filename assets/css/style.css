@@ -4,6 +4,8 @@ html, body {
 	margin: 0;
 	position: relative;
 	font-family: 'Roboto Mono', monospace;
+	max-width: 100%;
+	overflow-x: hidden;
 
 }
 
@@ -21,6 +23,9 @@ html, body {
 	width: 66%;
 }
 
+#welcome-text {
+	display: none;
+}
 .nav-element {
 	float: right;
 	margin-left: 24px;
@@ -56,6 +61,7 @@ html, body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
 .sidebar-item {
@@ -63,6 +69,11 @@ html, body {
 	align-items: center;
 	font-family: 'Parisienne', cursive;
 	font-size: 40px;
+}
+
+.sidebar img {
+	width: 500px;
+	overflow: hidden;
 }
 
 #photo-me {
@@ -88,9 +99,12 @@ html, body {
 .about-container {
 	width: 66vw;
 	padding-top: 75px;
-
-
 }
+
+.about-container img {
+	width: 66vw;
+}
+
 ul {
 	list-style: none;
 	padding-left: 10;
@@ -145,8 +159,44 @@ ul {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	left: 20%;
+	left: 10%;
 }
 .row {
 	margin-top: 10px;
 }
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: gray;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+	border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+#back-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#back-to-top:hover {
+    background: #FFD07F;
+}
+#back-to-top:hover i {
+    color: #;
+    top: 5px;
+}
+
+
