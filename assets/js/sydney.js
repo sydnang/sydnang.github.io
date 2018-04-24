@@ -2,7 +2,6 @@ $(document).ready(function() {
 
 	//JQUERY FUNCTION NUMBER 1 hover over nav bar buttons 
 	$(".nav-element").hover(function() {
-		console.log('helloooo')
 		$(this).css('cursor', 'pointer');
 	}, function() {
 		$(this).css('cursor', 'auto');
@@ -16,12 +15,16 @@ $(document).ready(function() {
 	
 
 	//JQUERY FUNCTION NUMBER 3 Back to top button appears when you scroll
-	$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        
-        $('#back-to-top').fadeIn(300);    
-    } else {
-        $('#back-to-top').fadeOut(300);   
-    }
+	
+	
+
+	$("body").scroll(function() {
+    	if ($(this).scrollTop() >= 50) {
+    		console.log('you scrolled');        
+        	$('#back-to-top').fadeIn(300);    
+    	} else {
+        	$('#back-to-top').fadeOut(300);   
+    	}
 	});
 
 	//JQUERY FUNCTION NUMBER 4 Back to top brings you to top when you click
@@ -41,8 +44,25 @@ $(document).ready(function() {
 
 	//JQUERY FUNCTION NUMBER 6 fadeIn welcome message when the page first loads
 	var pageload = function() {
-		$('#welcome-text').fadeIn(800);
+		$('.sidebar-item').fadeIn(800);
 		console.log('loaded');
 	}
 	pageload()
+
+	console.log($(this).scrollTop());
+	console.log(document.scrollingElement.scrollTop);
+
+    $(".content").on( 'scroll', function(){
+   		console.log('Event Fired');
+	});
+
+	$(".content").bind('scroll', function() {
+   console.log('Event worked');
+	}); 
+
+	var p = $('html,body');
+	$( ".info" ).text( "scrollTop:" + p.scrollTop() );
+
+
+
 })

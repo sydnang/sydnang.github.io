@@ -43,7 +43,6 @@ html, body {
 
 .content {
 	width: 900px;
-	height: 2000px;
 	position: absolute;
 	left: 34vw;
 	letter-spacing: 3px;
@@ -74,7 +73,43 @@ html, body {
 .sidebar img {
 	width: 500px;
 	overflow: hidden;
+	z-index: -1;
 }
+#social-media{
+    text-align: center;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 50px;
+    border-radius: 13px;
+    transition: .2s;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  .fa:hover {
+    color: white;
+  }
+  .fa-facebook {
+    background: #FEDC3D;
+    color: black;
+    z-index: 100;
+    position: absolute;
+  }
+  .fa-twitter{
+    background: #FEDC3D;
+    color: black;
+    position: absolute;
+  }
+  .fa-instagram {
+    background: #FEDC3D;
+    color: black;
+    position: absolute;
+  }
 
 #photo-me {
 	padding: 10px;
@@ -83,8 +118,6 @@ html, body {
 	float: left;
 	z-index: 5;
 	border-radius: 5%;
-
-
 }
 
 /*.top-bar-container {
@@ -156,7 +189,6 @@ ul {
 }
 
 .item img {
-	height: 100%;
 	width: 100%;
 	position: absolute;
 	left: 10%;
@@ -168,8 +200,8 @@ ul {
 
 #back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     background: gray;
     width: 50px;
     height: 50px;
